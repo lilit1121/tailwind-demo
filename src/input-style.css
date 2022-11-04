@@ -1,0 +1,68 @@
+/* custom-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: "newake";
+    src: url("/fonts/newake.otf");
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #363636;
+    outline: 1px solid #222222;
+}
+
+.limit-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.limit-text-2{
+    -webkit-line-clamp: 2;
+    line-clamp: 2; 
+}
+
+.limit-text-3{
+    -webkit-line-clamp: 3;
+    line-clamp: 3; 
+}
+
+.limit-text-7{
+    -webkit-line-clamp: 7;
+    line-clamp: 7; 
+}
+
+.limit-text-10{
+    -webkit-line-clamp: 10;
+    line-clamp: 10; 
+}
+
+.calcWidth{
+    width: calc(50% - 20px);
+}
+
+.calcWidth-6-percent{
+    width: calc(50% - 6%);
+}
+
+.centered{
+    left: 50%;
+    transform: translate(-50%);
+    top: -50px; 
+}
+
